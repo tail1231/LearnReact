@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "umi-plugin-react": "^1.15.8"
   }
 }
