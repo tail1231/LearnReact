@@ -57,6 +57,13 @@ export default {
                 path: '/puzzlecards',
                 component: './PuzzleCardsPage'
             },
+            {
+                icon: "icon-feihangshipin",
+                name: "table",
+                path: '/table',
+                component: './Table'
+            },
+
         ]
     }],
 }
