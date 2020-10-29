@@ -63,7 +63,12 @@ export default {
                 path: '/table',
                 component: './Table'
             },
-
+            {
+                icon: "icon-feihangshipin",
+                name: "uploaddown",
+                path: '/uploadDown',
+                component: './UploadDown'
+            },
         ]
     }],
 }

@@ -3,6 +3,7 @@ import { Table } from "antd";
 import { connect } from "dva";
 
 const mapStateToProps = (state) => {
+  console.log("state", state);
   return {
     cardsList: state.tableList.list,
     cardsLoading: state.loading.effects["tableList.getTableList"],
