@@ -17,6 +17,10 @@ export default {
         component: '../layout',
         routes: [
             {
+                path: '/',
+                redirect: '/helloworld',
+            },
+            {
                 icon: "icon-zhuchengxu",
                 name: "helloworld",
                 path: '/helloworld',

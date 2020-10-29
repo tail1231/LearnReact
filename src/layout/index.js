@@ -30,7 +30,7 @@ export default class BasicLayout extends Component {
             <Layout>
                 <Sider width={256} style={{ minHeight: '100vh' }}>
                     <div style={{ height: '32px', background: 'rgba(255,255,255,.2)', margin: '16px' }} />
-                    <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']}>
+                    <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']} defaultOpenKeys={['sub1']}>
                         {
                             routes.length > 0 && routes.map((item, index) => {
                                 console.log('item', item);
@@ -43,7 +43,8 @@ export default class BasicLayout extends Component {
                                                 )
                                             })
                                         }
-                                    </SubMenu>) : <Menu.Item key={index + 1}>
+                                    </SubMenu>) :
+                                    item.path === '/' ? null : <Menu.Item key={index + 1}>
                                         <Link to={item.path}>
                                             <MyIcon type={item.icon} />
                                             <span>{item.name}</span>
