@@ -69,6 +69,12 @@ export default {
                 path: '/uploadDown',
                 component: './UploadDown'
             },
+            {
+                icon: "icon-tousujianyi",
+                name: "case1",
+                path: '/case1',
+                component: './Case1'
+            },
         ]
     }],
 }

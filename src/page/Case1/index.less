@@ -1,0 +1,53 @@
+.page {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .left {
+    width: 390px;
+    padding: 16px;
+    :global {
+      .ant-tag {
+        width: 100px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box;
+    .item {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .t1 {
+        color: #333;
+        span {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sort {
+  span {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+  }
+}
